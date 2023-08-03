@@ -1,0 +1,8 @@
+#relogio{
+    border: 5px solid black;
+    width:fit-content;
+    text-align: center;
+    padding:10px;
+    font-family: 'DS-Digital', sans-serif;
+    font-size:35px
+}
