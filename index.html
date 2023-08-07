@@ -10,15 +10,19 @@
     <body>
         <h1 id="relogio"></h1>
         <h1>Buscar endereço via cep</h1>
-        <form onsubmit="buscaCep(event, this)">
+        <form>
             <label>Cep:</label>
-            <input type="text">
-            <input type="submit" value="Pesquisar">
+            <input type="text" id="cepTXT">
         </form>
+        <button onclick="buscaEndereco()">Pesquisar</button>
+        <button onclick="limpaCampos()">Limpar</button>
+        <div id="endereco">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
         <script src="js/relogio.js"></script>
         <script src="js/buscaEndereco.js"></script>
-        <script>
-            
-        </script>
     </body>
 </html>
