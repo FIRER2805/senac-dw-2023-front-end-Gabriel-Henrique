@@ -2,7 +2,9 @@
 async function buscaEndereco()
 {
     let url = `https://viacep.com.br/ws/${buscaCep()}/json/`;
-    let json = await fetch(url).then(resposta => resposta.json());
+    let json = await fetch(url)
+        .then(resposta => resposta.json())
+        .catch(erro => alert("cep inexistente"));
     mostraEndereco(json);
 }
 
