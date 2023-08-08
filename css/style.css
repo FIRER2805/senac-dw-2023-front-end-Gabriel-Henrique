@@ -1,0 +1,33 @@
+body{
+    background-image: url(../imagens/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#relogio{
+    margin: 10px auto 0 auto;
+    width:fit-content;
+    text-align: center;
+    padding:10px 10px 0 10px;
+    font-family: 'DS-Digital', sans-serif;
+    font-size:35px
+}
+
+main{
+    margin:0 auto;
+    width: 50%;
+    border: 5px dotted rgb(44, 224, 218);
+    border-radius:20px;
+    background-color:rgba(185, 255, 253, 0.113);
+    text-align: center;
+    height: 400px;
+    color:white;
+}
+main p, main label{
+    font-size: 20px;
+}
+
+main button{
+    margin-top: 10px;
+    border-radius: 10px;
+}
