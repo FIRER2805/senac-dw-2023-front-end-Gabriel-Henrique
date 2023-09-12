@@ -13,7 +13,7 @@ function buscaTodos(){
 
 function montaTabela(produtos){
     limpaTabela();
-    const tabela = document.getElementsByTagName("table")[0];
+    const tabela = document.getElementsByTagName("tbody")[0];
     for(let i = 0; i < produtos.length; i++){
         let tr = document.createElement("tr");
         montaLinha(tr, produtos[i]);
@@ -60,10 +60,11 @@ function montaLinha(elementoPai, produto){
  */
 function montaBody(){
     let inputs = document.querySelectorAll(".form-control");
+    console.log()
     let parametros = {nome : inputs[0].value,
-    valorMaximo : inputs[1].value,
+    pesoMaximo : inputs[1].value,
     pesoInicial : inputs[2].value,
-    pesoMaximo : inputs[3].value,
+    valorMaximo : inputs[3].value,
     dataCadastroInicial: inputs[4].value,
     dataCadastroMaximo: inputs[5].value
     };
@@ -76,8 +77,8 @@ function montaBody(){
  * @todo Arrumar este método
 */
 function limpaTabela(){
-    let linhas = document.getElementsByTagName("tr");
-    for(let i = 1; i < linhas.length; i++){
-        linhas[i].remove();
+    let body = document.getElementsByTagName("tbody")[0];
+    while(body.firstChild){
+        body.lastChild.remove();
     }
 }
