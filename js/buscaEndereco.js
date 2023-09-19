@@ -1,4 +1,4 @@
-export async function buscaEndereco(cep)
+async function buscaEndereco(cep)
 {
     let url = `https://viacep.com.br/ws/${cep}/json/`;
     let json = await fetch(url)
